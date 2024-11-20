@@ -5,20 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./public/style/portofolio.css" rel="stylesheet">
-    <style>
-        #dark-toggle:checked~label div.toggle-circle {
-            transform: translateX(0.75rem);
-        }
-    </style>
 </head>
 
-<body class="dark:bg-slate-900">
-    <header class="border-b dark:border-black dark:text-white sticky top-0 backdrop-blur bg-white/60 dark:bg-black/80">
-        <div class="max-w-7xl mx-auto px-[1rem] md:px-[4rem] sm:px-[2rem]">
+<body>
+    <header
+        class="sticky z-50 top-0 border-b border-transparent dark:text-white backdrop-blur bg-white/60 dark:bg-dark">
+        <div class="container px-[1rem]">
             <div class="flex py-6">
                 <div class="hidden md:flex items-center gap-8">
                     <a href="#hero" class="hover:text-primary capitalize">profile</a>
-                    <a href="#hoby" class="hover:text-primary capitalize">hoby</a>
                     <a href="#skill" class="hover:text-primary capitalize">skill</a>
                     <a href="#portofolio" class="hover:text-primary capitalize">portofolio</a>
                     <a href="#contact" class="hover:text-primary capitalize">contact</a>
@@ -42,15 +37,35 @@
     <main>
         <!-- Hero Section Start -->
         <section id="hero" class="dark:bg-dark dark:text-white">
-            <div class="max-w-7xl mx-auto pt-[8rem] pb-[10rem] px-[1rem] md:px-[4rem] sm:px-[2rem]">
+            <div class="container pt-[6rem] pb-[7rem] px-[1rem] lg:px-[2rem]">
                 <div class="md:flex flex-row-reverse items-center">
-                    <div class="md:mr-0 mx-auto bg-no-repeat bg-cover bg-center rounded-full aspect-square w-[18rem] xl:w-[20rem]"
+                    <div class="mx-auto md:mr-0 md:ml-[4rem] md:min-w-[14rem] lg:min-w-[16rem] xl:ml-[8rem] xl:min-w-[20rem] w-[14rem] sm:w-[16rem] bg-no-repeat bg-cover bg-center rounded-full aspect-square"
                         style="background-image: url('public/image/profile.JPG');"></div>
-                    <div class="md:mb-8 mt-8 md:mt-0">
-                        <div class="text-3xl text-primary font-semibold mb-2">Halo Semua🤞, Saya</div>
-                        <div class="text-5xl font-bold mb-8">Dwiki Istghfarulloh Prana Mukti</div>
-                        <div class="text-2xl font-light">
-                            Web Developer | <span>IT Departement</span>
+                    <div flag="grid-dot"
+                        class="md:-ml-[4rem] md:-mr-[1.5rem] dark:bg-grid-white/[0.3] bg-grid-black/[0.2] relative flex items-center justify-center">
+                        <div
+                            class="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-dark bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]">
+                        </div>
+                        <div class="relative z-10 md:py-[3rem] md:pl-[4rem] md:pr-[1.5rem]">
+                            <div class="md:mb-8 mt-[4rem] md:mt-0 grow">
+                                <div class="text-2xl mb-4">
+                                    <span class="text-primary">Web Developer</span> | <span
+                                        class="font-light">Freelancer</span>
+                                </div>
+                                <div class="text-4xl md:text-5xl font-bold mb-8 md:mb-10">Dwiki Istghfarulloh Prana
+                                    Mukti
+                                </div>
+                                <p>
+                                    I am an web developer skilled in both frontend and backend development. I have a
+                                    strong
+                                    passion for backend programming, system deployment on servers, and optimizing
+                                    performance. I
+                                    thrive on creating efficient, high-quality solutions and enjoy tackling challenges
+                                    in
+                                    system
+                                    performance enhancement.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -59,74 +74,72 @@
         <!-- Hero Section End -->
 
 
-        <!-- Hoby Section Start -->
-        <section id="hoby" class="bg-slate-100 dark:bg-slate-800 dark:text-white">
-            <div class="max-w-7xl mx-auto pt-[4rem] pb-[10rem] px-[1rem] md:px-[4rem] sm:px-[2rem]">
-                <div class="text-center mb-[3rem]">
-                    <div class="text-4xl font-bold mb-2">Hoby Saat Ini</div>
-                    <div class="dark:text-slate-400 text-xl">Tertarik pada hal-hal pengembangan diri</div>
-                </div>
-                <div class="grid grid-cols-3 gap-8">
-                    <div
-                        class="col-span-full md:col-span-1 bg-white dark:bg-slate-700 rounded-xl overflow-hidden shadow">
-                        <img src="https://source.unsplash.com/360x200?programming" alt="programming" class="w-full">
-                        <div class="p-6">
-                            <div class="text-xl font-semibold dark:text-white mb-2">Pemrograman</div>
-                            <p class="mb-4">Eksplorasi sekaligus membandingkan bahasa pemrograman dan framework.
-                                Sehingga
-                                dari eksplorasi tersebut daya dapat mengkreasikan pattern fleksibel dan progresif.</p>
-                        </div>
-                    </div>
-                    <div
-                        class="col-span-full md:col-span-1 bg-white dark:bg-slate-700 rounded-xl overflow-hidden shadow">
-                        <img src="https://source.unsplash.com/360x200?sport" alt="olahraga" class="w-full">
-                        <div class="p-6">
-                            <div class="text-xl font-semibold dark:text-white mb-2">Olahraga</div>
-                            <p class="mb-4">Olahraga adalah hal yang menyenangkan. biasanya saya menyempatkan waktu
-                                setidaknya 1 minggu sekali untuk renang atau joging untuk menjaga kesehatan dan stamina.
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        class="col-span-full md:col-span-1 bg-white dark:bg-slate-700 rounded-xl overflow-hidden shadow">
-                        <img src="https://source.unsplash.com/360x200?history" alt="membaca-sejarah" class="w-full">
-                        <div class="p-6">
-                            <div class="text-xl font-semibold dark:text-white mb-2">Belajar Sejarah</div>
-                            <p class="mb-4">Membaca atau mendengarkan cerita sejarah adalah hal yang menarik bagi saya.
-                                Mengetahui kisah dan peradaban masa lalu dapat memberi pertimbangan saat mengambil
-                                keputusan dan memperkirakan sebab & akibat.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Hoby Section End -->
-
-
         <!-- Skill Section Start -->
-        <section id="skill" class="bg-slate-700 dark:bg-slate-300">
-            <div class="max-w-7xl mx-auto pt-[4rem] pb-[10rem] px-[1rem] md:px-[4rem] sm:px-[2rem]">
-                <div class="text-center mb-[3rem]">
-                    <div class="text-4xl font-bold mb-2 text-primary">Skill Yang Dikuasai</div>
-                    <div class="dark:text-slate-400 text-xl text-white">Pengetahuan yang berkaitan dengan pemrograman
-                    </div>
+        <section id="skill" class="dark:bg-slate-900 dark:text-white">
+            <div class="container pt-[3rem] pb-[7rem] px-[2rem] lg:px-[5rem]">
+                <div class="text-center mb-[4rem]">
+                    <div class="font-bold text-3xl mb-2">Skill and Tools</div>
+                    <div class="text-xl text-light">Quick to learn and adapt to new technologies</div>
                 </div>
-                <div class="flex flex-wrap items-center justify-center">
-                    <div class="max-w-[120px] mx-4 py-4 lg:mx-6 xl:mx-8">
-                        <img src="public/image/logo/HTML5_logo.png" alt="HTML 5">
-                    </div>
-                    <div class="max-w-[120px] mx-4 py-4 lg:mx-6 xl:mx-8">
-                        <img src="public/image/logo/CSS3_logo.png" alt="CSS 3">
-                    </div>
-                    <div class="max-w-[120px] mx-4 py-4 lg:mx-6 xl:mx-8">
-                        <img src="public/image/logo/PHP-logo.png" alt="PHP">
-                    </div>
-                    <div class="max-w-[120px] mx-4 py-4 lg:mx-6 xl:mx-8">
-                        <img src="public/image/logo/bootstrap-5-logo.png" alt="Bootstrap">
-                    </div>
-                    <div class="max-w-[120px] mx-4 py-4 lg:mx-6 xl:mx-8">
-                        <img src="public/image/logo/Tailwind_CSS_Logo.png" alt="Tailwind">
-                    </div>
+                <div
+                    class="grid xl:grid-cols-8 sm:grid-cols-6 grid-cols-4 xl:gap-x-[4.5rem] md:gap-x-[3.5rem] gap-x-[2rem] gap-y-[3rem] items-center">
+                    <a target="_blank" href="https://v5-docs.adonisjs.com/">
+                        <img src="public/image/logo/adonisjs.svg" alt="Adonis JS">
+                    </a>
+                    <a target="_blank" href="https://astro.build/" class="px-3">
+                        <img src="public/image/logo/astrojs.svg" alt="Astro JS">
+                    </a>
+                    <a target="_blank" href="https://getbootstrap.com/">
+                        <img src="public/image/logo/bootstrap.png" alt="Bootstrap CSS">
+                    </a>
+                    <a target="_blank" href="https://bun.sh/">
+                        <img src="public/image/logo/bunjs.png" alt="Bun JS">
+                    </a>
+                    <a target="_blank" href="https://www.docker.com/">
+                        <img src="public/image/logo/docker.webp" alt="Docker">
+                    </a>
+                    <a target="_blank" href="https://elysiajs.com/">
+                        <img src="public/image/logo/elysiajs.png" alt="Elysia JS">
+                    </a>
+                    <a target="_blank" href="https://firebase.google.com/">
+                        <img src="public/image/logo/firebase.webp" alt="Firebase">
+                    </a>
+                    <a target="_blank" href="https://git-scm.com/">
+                        <img src="public/image/logo/git.png" alt="Git">
+                    </a>
+                    <a target="_blank" href="https://cloud.google.com/" class="px-1">
+                        <img src="public/image/logo/gcp.png" alt="GCP">
+                    </a>
+                    <a target="_blank" href="https://hono.dev/" class="px-3">
+                        <img src="public/image/logo/honojs.png" alt="Hono JS">
+                    </a>
+                    <a target="_blank" href="https://laravel.com/" class="px-2">
+                        <img src="public/image/logo/laravel.png" alt="PHP Laravel">
+                    </a>
+                    <a target="_blank" href="https://www.mysql.com/">
+                        <img src="public/image/logo/mysql.png" alt="MySQL">
+                    </a>
+                    <a target="_blank" href="https://nextjs.org/">
+                        <img src="public/image/logo/nextjs.png" alt="Next JS">
+                    </a>
+                    <a target="_blank" href="https://nginx.org/">
+                        <img src="public/image/logo/nginx.webp" alt="Nginx">
+                    </a>
+                    <a target="_blank" href="https://nodejs.org/">
+                        <img src="public/image/logo/nodejs.webp" alt="Node JS">
+                    </a>
+                    <a target="_blank" href="https://frankenphp.dev/">
+                        <img src="public/image/logo/php_franken.png" alt="PHP Franken">
+                    </a>
+                    <a target="_blank" href="https://www.postgresql.org/">
+                        <img src="public/image/logo/postgresql.webp" alt="PostgreSQL">
+                    </a>
+                    <a target="_blank" href="https://react.dev/">
+                        <img src="public/image/logo/reactjs.webp" alt="React JS">
+                    </a>
+                    <a target="_blank" href="https://tailwindcss.com/">
+                        <img src="public/image/logo/tailwind.png" alt="Tailwind CSS">
+                    </a>
                 </div>
             </div>
         </section>
@@ -134,75 +147,188 @@
 
 
         <!-- Experienc Section Start -->
-        <section id="portofolio" class="dark:bg-slate-700 dark:text-white">
-            <div class="max-w-7xl mx-auto pt-[4rem] pb-[10rem] px-[1rem] md:px-[4rem] sm:px-[2rem]">
+        <section id="portofolio" class="dark:bg-dark dark:text-white">
+            <div class="container pt-[3rem] pb-[10rem] px-[1rem] md:px-[4rem] sm:px-[2rem]">
                 <div class="text-center mb-[3rem]">
-                    <div class="text-4xl font-bold mb-2">Portofolio</div>
-                    <div class="text-xl text-slate-500">Memiliki pengalaman yang cukup lama di bidang IT.</div>
+                    <div class="font-bold text-3xl mb-2">Portofolio</div>
+                    <div class="text-xl text-light">I've got tons of experience in web development</div>
                 </div>
-                <div class="grid grid-cols-2 gap-6 mt-[4rem]">
-                    <div class="col-span-full md:col-span-1">
+                <div class="grid md:grid-cols-2 gap-6 mt-[4rem]">
+                    <div>
                         <div class="rounded-md shadow-md overflow-hidden">
-                            <img src="https://source.unsplash.com/800x500?game-online" alt="Gaben Store" width="w-full">
+                            <img src="#" alt="Gaben Store" width="w-full">
                         </div>
-                        <div class="font-semibold text-xl text-dark dark:text-white mt-6 mb-2">
+                    </div>
+                    <div>
+                        <div class="font-semibold text-xl dark:text-white mt-6 mb-2">
                             Gaben Store | <span class="text-primary">Backend Dev</span>
                         </div>
-                        <p class="text-secondary">
-                            Marketplace jual beli akun game online. Stack sistem yang di gunakan adalah nextJS,
-                            Laravel,
-                            MySQL.
+                        <p class="text-light">
+                            Gabenstore is an innovative marketplace platform designed for the buying and selling of
+                            in-game items and gaming accounts. The platform features a secure escrow system to protect
+                            both buyers and sellers, ensuring seamless and trustworthy transactions.
                         </p>
                     </div>
-                    <div class="col-span-full md:col-span-1">
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mt-[4rem]">
+                    <div class="md:order-last">
                         <div class="rounded-md shadow-md overflow-hidden">
-                            <img src="https://source.unsplash.com/800x500?hospital" alt="Gaben Store" width="w-full">
+                            <img src="#" alt="Gaben Store" width="w-full">
                         </div>
-                        <div class="font-semibold text-xl text-dark dark:text-white mt-6 mb-2">
+                    </div>
+                    <div>
+                        <div class="font-semibold text-xl dark:text-white mt-6 mb-2">
                             SIMRS Prikasih | <span class="text-primary">Backend Dev</span>
                         </div>
-                        <p class="text-secondary">
-                            Sistem informasi untuk pengelolaan data rumah sakit seperti data pasien, dokter, rekam
-                            medis, DLL. Sistem ini dilengkapi fitur RBAC sehingga administrator dapat mengatur
-                            pergerakan pengguna.
+                        <p class="text-light">
+                            SIMRS Prikasih is a hospital management information system designed to manage various
+                            important data, including patient and doctor information, as well as history and medical
+                            record documents. This system is also equipped with a Role-Based Access Control (RBAC)
+                            feature to ensure security and appropriate access control according to user roles.
                         </p>
                     </div>
-                    <div class="col-span-full md:col-span-1">
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mt-[4rem]">
+                    <div>
                         <div class="rounded-md shadow-md overflow-hidden">
-                            <img src="https://source.unsplash.com/800x500?school" alt="Gaben Store" width="w-full">
+                            <img src="#" alt="Gaben Store" width="w-full">
                         </div>
-                        <div class="font-semibold text-xl text-dark dark:text-white mt-6 mb-2">
-                            Sistem Informasi Sekolah | <span class="text-primary">Fullstack</span>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-xl dark:text-white mt-6 mb-2">
+                            APIVOUCHERGAME | <span class="text-primary">Fullstack Dev</span>
                         </div>
-                        <p class="text-secondary">
-                            Sebuah web aplikasi untuk mengatur data dan keteriban sekolah. Fitur utama dari sistem ini
-                            meliputi absensi digital berbasis geolocator, pencatatan aktivitas penduduk sekolah, dan
-                            journal kelas.
+                        <p class="text-light">
+                            It is an aggregator for game voucher services, enabling users to purchase game tokens from
+                            various providers. The system forwards requests from end-users to multiple game token
+                            providers, streamlining the transaction process. It also incorporates a queue system to
+                            ensure that transactions do not overload the system, maintaining smooth and efficient
+                            performance for all users.
                         </p>
                     </div>
-                    <div class="col-span-full md:col-span-1">
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mt-[4rem]">
+                    <div class="md:order-last">
                         <div class="rounded-md shadow-md overflow-hidden">
-                            <img src="https://source.unsplash.com/800x500?topup-game" alt="Gaben Store" width="w-full">
+                            <img src="#" alt="Gaben Store" width="w-full">
                         </div>
-                        <div class="font-semibold text-xl text-dark dark:text-white mt-6 mb-2">
-                            Api Voucher Game | <span class="text-primary">Fullstack</span>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-xl dark:text-white mt-6 mb-2">
+                            School Order Management - SMP Ma’arif 1 Ponorogo | <span class="text-primary">Backend -
+                                Frontend Dev</span>
                         </div>
-                        <p class="text-secondary">
-                            Sebuah agregator yang menyediakan akses api untuk membeli token game.
+                        <p class="text-light">
+                            It is a school management application designed to streamline the management of student
+                            behavior, lesson journals, and daily attendance, with an innovative geolocation-based
+                            attendance feature. The system helps teachers and staff efficiently track student behavior
+                            and class activities while ensuring accurate attendance records. The use of geolocation for
+                            attendance enhances security and ensures that students are on campus when marking
+                            attendance. Additionally, the system includes a Role-Based Access Control (RBAC) feature,
+                            ensuring that different user roles (e.g., teachers, admin) have appropriate access to data
+                            and features based on their responsibilities.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mt-[4rem]">
+                    <div>
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="#" alt="Gaben Store" width="w-full">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-xl dark:text-white mt-6 mb-2">
+                            SIMBAH - SMKN 1 Jenangan | <span class="text-primary">Main Developer and Maintainer</span>
+                        </div>
+                        <p class="text-light">
+                            SIMBAH SMKN 1 Jenangan is a comprehensive school management system designed to manage core
+                            data such as student and parent information, teacher and staff profiles, subjects, classes,
+                            extracurricular activities, and report card details. The application ensures sustainable and
+                            flexible data storage, allowing for continuity in data management across academic years. It
+                            includes Role-Based Access Control (RBAC) to manage user permissions securely.
+                            The system also supports administrative needs with robust data export features, including
+                            report cards, student master data, grade transcripts, and various Excel exports. These
+                            functionalities enhance efficiency in managing and processing school-related data while
+                            ensuring data accuracy and usability.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mt-[4rem]">
+                    <div class="md:order-last">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="#" alt="Gaben Store" width="w-full">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-xl dark:text-white mt-6 mb-2">
+                            Document Approval - PT PLN Nusantara Power | <span class="text-primary">Fulstack Dev</span>
+                        </div>
+                        <p class="text-light">
+                            The application streamlines the approval process for financial documents for the Finance
+                            Director of PT Nusantara Power. Once approved, each document is automatically embedded with
+                            an official electronic signature issued by Peruri, ensuring authenticity and compliance with
+                            legal standards. Developed using the Laravel framework, the system enhances operational
+                            efficiency by automating the document approval and signing process while maintaining high
+                            security and reliability.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mt-[4rem]">
+                    <div>
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="#" alt="Gaben Store" width="w-full">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-xl dark:text-white mt-6 mb-2">
+                            E-buddy sidoarjo | <span class="text-primary">Fullstack Dev</span>
+                        </div>
+                        <p class="text-light">
+                            E-Buddy Sidoarjo is an innovative government administration system designed to streamline
+                            the workflow of public servants in the Sidoarjo Regency. Available on both desktop and
+                            mobile platforms, the application aims to create a faster, more effective, efficient,
+                            transparent, and accountable working environment. It also supports improved productivity in
+                            delivering public services.
+                            In this project, I contributed by maintaining and enhancing existing features to ensure the
+                            system's stability and functionality. Using the Yii2 framework, I optimized the application
+                            by resolving bugs, improving code performance, and ensuring a seamless experience for its
+                            users.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mt-[4rem]">
+                    <div class="md:order-last">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="#" alt="Gaben Store" width="w-full">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-xl dark:text-white mt-6 mb-2">
+                            CMS Web Kormi Surabaya | <span class="text-primary">Fullstack Dev</span>
+                        </div>
+                        <p class="text-light">
+                            The CMS Web KORMI (Komite Olahraga Rekreasi Masyarakat Indonesia) Kota Surabaya is a
+                            platform designed to manage content and administrative workflows for promoting recreational
+                            sports in Surabaya. In this project, I contributed by maintaining and improving existing
+                            features to ensure optimal performance and system reliability. Leveraging the Yii2
+                            framework, I focused on debugging, enhancing functionalities, and ensuring the system
+                            effectively supports the organization’s operational needs.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Experienc Section End -->
+
+
     </main>
 
     <!-- Experienc Contact Start -->
-    <footer id="contact" class="bg-slate-700 dark:bg-slate-900 text-white">
-        <div class="max-w-7xl mx-auto pt-[4rem] pb-[10rem] px-[1rem] md:px-[4rem] sm:px-[2rem]">
-            <div class="text-primary text-3xl font-bold mb-6">Hubungi saya</div>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="col-span-full md:col-span-1">
+    <footer id="contact" class="bg-slate-900 text-white">
+        <div class="container py-[4rem] px-[1rem] md:px-[4rem] sm:px-[2rem]">
+            <div class="text-primary text-3xl font-bold mb-6">Contact</div>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
                     <div class="flex items-center gap-2 mb-2">
                         <div
                             class="h-9 aspect-square rounded-full flex items-center justify-center border border-slate-300">
@@ -212,7 +338,7 @@
                                     d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
                             </svg>
                         </div>
-                        <div>Jl. Raya Sampung No. 38, Ponorogo, Jawa Timur</div>
+                        <div>Jl. Raya Sampung, Ponorogo, Jawa Timur</div>
                     </div>
                     <a href="https://wa.me/081334501213" class="flex items-center gap-2 mb-2 hover:text-primary">
                         <div
@@ -225,7 +351,7 @@
                         </div>
                         <div>081334501213</div>
                     </a>
-                    <a href="243dwiki.com@gmail.com" class="flex items-center gap-2 mb-2 hover:text-primary">
+                    <a href="mailto:243dwiki.com@gmail.com" class="flex items-center gap-2 mb-2 hover:text-primary">
                         <div
                             class="h-9 aspect-square rounded-full flex items-center justify-center border border-slate-300">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -262,15 +388,18 @@
                         <div>dwiki.pranamukti</div>
                     </a>
                 </div>
-                <div class="col-span-full md:col-span-1">
+                <div>
                     <div class="w-full text-black">
-                        <form action="#">
-                            <input class="w-full bg-slate-500 rounded focus:outline-none p-4 mb-4"
+                        <form action="mailto:243dwiki.com@gmail.com" class="text-white">
+                            <label for="">Email Anda</label>
+                            <input name="cc" class="w-full bg-white/10 rounded focus:outline-none p-4 mb-4"
                                 placeholder="Email...">
-                            <textarea rows="5" class="w-full bg-slate-500 rounded focus:outline-none p-4 mb-4"
+                            <label for="">Pesan</label>
+                            <textarea rows="5" name="body"
+                                class="w-full bg-white/10 rounded focus:outline-none p-4 mb-4"
                                 placeholder="Tulis Pesan.."></textarea>
                             <div class="flex">
-                                <button class="bg-primary rounded-full px-8 py-3 text-white ml-auto">Kirim
+                                <button class="bg-primary rounded-full px-8 py-3 ml-auto">Kirim
                                     Email</button>
                             </div>
                         </form>

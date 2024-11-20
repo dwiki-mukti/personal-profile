@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#dark-toggle:checked~label div.toggle-circle {
+    transform: translateX(0.75rem);
+}
