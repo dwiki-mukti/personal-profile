@@ -27,7 +27,7 @@ module.exports = {
         // dark: '#0f172a',
         primary: '#00cdff',
         light: '#64748b',
-        dark: '#0e0f26',
+        dark: '#021628',
       },
     },
   },
